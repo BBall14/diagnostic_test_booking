@@ -1,0 +1,12 @@
+/* CSS for card to set max height of 250px, background color #f1f1f1, and margin top of 10% */
+.example-card {
+    max-height: 250px;
+    background-color: #f1f1f1;
+    margin-top: 10%;
+  }
+
+  
+/*CSS for form to set margin top of 10px */
+.form {
+    margin-top: 10px;
+  }

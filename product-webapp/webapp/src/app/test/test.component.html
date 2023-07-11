@@ -1,0 +1,27 @@
+<!--Render toolbar component-->
+<app-toolbar></app-toolbar>
+
+<!--Form to take a id value-->
+<div class="form">
+    <input type="text" [(ngModel)]="testId">
+    <button (click)="getTest()">Get Test</button>
+</div>
+
+<!-- div tag with flex as row wrap to itterate over the list of stocks and display the cards for each stock -->
+<div fxLayout="row wrap" fxLayoutAlign="space-around center">
+    <!-- keep 3 cards in max for each row -->
+    <div *ngFor="let test of testDetails" fxFlex="30">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Test name: <strong>{{test.name}}</strong></mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Price: <strong>{{test.price}}</strong></p>
+          <p>Description: {{test.description}}</p>
+        </mat-card-content>
+        <mat-card-actions align="end">
+          <button mat-button color="primary" (click)="book(test.id)">Book Appointment</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>

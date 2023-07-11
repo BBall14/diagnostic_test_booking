@@ -1,0 +1,9 @@
+/* CSS for card to set height to 60px, width 100%, background color #EB5E40, color to white, and font weight to 600 */
+.toolbar {
+    height: 60px;
+    width: 100%;
+    background-color: #EB5E40;
+    color: white;
+    font-weight: 600;
+  }
+  
